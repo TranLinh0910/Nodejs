@@ -1,0 +1,304 @@
+{
+  "products": [
+    {
+      "id": "20",
+      "categoryId": "1",
+      "name": "Sơ mi trắng TD",
+      "image": "https://firebasestorage.googleapis.com/v0/b/shop-32719.appspot.com/o/images%2Faotrang.jpg?alt=media&token=fc2adb06-7dd0-4863-a71b-77beb8e64c9e",
+      "price": "250.000",
+      "status": false,
+      "countInStock": 61
+    },
+    {
+      "id": "21",
+      "categoryId": "1",
+      "name": "PracticalConcrete ",
+      "image": "https://firebasestorage.googleapis.com/v0/b/shop-32719.appspot.com/o/images%2FUntitled-1.jpg?alt=media&token=b7ce2a44-66e5-43fd-be6b-72bc51779625",
+      "price": "417.00",
+      "status": true,
+      "countInStock": 26
+    },
+    {
+      "id": "vsnzjzuue",
+      "categoryId": "1",
+      "name": "new product",
+      "image": "https://firebasestorage.googleapis.com/v0/b/shop-32719.appspot.com/o/images%2FUntitled-1.jpg?alt=media&token=1b139756-fcb2-4b43-8afb-1d0a635823f4",
+      "price": "250.000"
+    },
+    {
+      "id": "fr73d7bc1",
+      "categoryId": "1",
+      "name": "Áo thun rộng",
+      "image": "https://firebasestorage.googleapis.com/v0/b/shop-32719.appspot.com/o/images%2Faotrang2.jpg?alt=media&token=5979f195-b0e7-49aa-9f7b-3b291fbbb821",
+      "price": "20000"
+    },
+    {
+      "id": "byww2kmpg",
+      "categoryId": "1",
+      "name": "Sơ mi TD",
+      "image": "https://firebasestorage.googleapis.com/v0/b/shop-32719.appspot.com/o/images%2Fsomiden.jpg?alt=media&token=601990f5-af9a-499e-9efb-b97cb2c396e0",
+      "price": "350.000"
+    },
+    {
+      "id": "4mq55ze92",
+      "categoryId": "1",
+      "name": "Áo Khoác Vải Đơn Giản ",
+      "image": "https://firebasestorage.googleapis.com/v0/b/shop-32719.appspot.com/o/images%2Faokhoac.jpg?alt=media&token=eab23599-fa14-41fb-bfef-f64af9b977a6",
+      "price": "450.000"
+    },
+    {
+      "id": "7ua0nk50c",
+      "categoryId": "4",
+      "name": "Quần Jogger Thun",
+      "image": "https://firebasestorage.googleapis.com/v0/b/shop-32719.appspot.com/o/images%2Fquan1.jpg?alt=media&token=cf0b18b8-85be-497c-8d77-5b6f376377ff",
+      "price": "450.000"
+    },
+    {
+      "id": "dia16ld62",
+      "categoryId": "1",
+      "name": "Sơ Mi TD R ",
+      "image": "https://firebasestorage.googleapis.com/v0/b/shop-32719.appspot.com/o/images%2Fsomixanh.jpg?alt=media&token=9f6eafe0-090c-4b13-b91a-291be99c6c8e",
+      "price": "375.000"
+    },
+    {
+      "id": "bbnc4nyms",
+      "categoryId": "2",
+      "name": "Phong nữ xinh xẻo",
+      "image": "https://firebasestorage.googleapis.com/v0/b/shop-32719.appspot.com/o/images%2Fphongnu4.jpg?alt=media&token=9a567359-cd20-408d-b786-ecfd0954aa2b",
+      "price": "108.000"
+    },
+    {
+      "id": "mjxpozksw",
+      "name": "Phong nữ",
+      "categoryId": "2",
+      "image": "https://firebasestorage.googleapis.com/v0/b/shop-32719.appspot.com/o/images%2Fphongnu1.jpg?alt=media&token=c0ba98dc-ddc2-400c-8e1d-8b6e43914099",
+      "price": "100.000"
+    },
+    {
+      "id": "qkwo5ybpy",
+      "categoryId": "2",
+      "name": "Phông nữ",
+      "image": "https://firebasestorage.googleapis.com/v0/b/shop-32719.appspot.com/o/images%2Fphongnu2.jpg?alt=media&token=aa6c9593-8ea5-4fc0-8653-61c65108233d",
+      "price": "105.000"
+    },
+    {
+      "id": "v68bn51sv",
+      "categoryId": "2",
+      "name": "Áo phông nữ",
+      "image": "https://firebasestorage.googleapis.com/v0/b/shop-32719.appspot.com/o/images%2Fphongnu3.jpg?alt=media&token=6073a177-5e28-4289-85f4-cac429bf1030",
+      "price": "155.000"
+    },
+    {
+      "id": "5r4x2as0j",
+      "categoryId": "2",
+      "name": "Phông nữ",
+      "image": "https://firebasestorage.googleapis.com/v0/b/shop-32719.appspot.com/o/images%2Fphongnu5.jpg?alt=media&token=4e71a06b-a30f-4ca5-9214-382e6181b0e2",
+      "price": "100.000"
+    },
+    {
+      "id": "t4wyhv994",
+      "categoryId": "3",
+      "name": "Hoodie ",
+      "image": "https://firebasestorage.googleapis.com/v0/b/shop-32719.appspot.com/o/images%2Fhoodie.jpg?alt=media&token=379b37bf-a164-40d8-8aef-a4f27023008d",
+      "price": "275.000"
+    },
+    {
+      "id": "d5v5z7rei",
+      "name": "Hoodie",
+      "categoryId": "3",
+      "image": "https://firebasestorage.googleapis.com/v0/b/shop-32719.appspot.com/o/images%2Fhoodie1jpg.jpg?alt=media&token=c5671109-a655-40bd-a027-1cb055f2c6ab",
+      "price": "350.000"
+    },
+    {
+      "id": "t6mshmfsd",
+      "categoryId": "2",
+      "name": "Phông nữ",
+      "image": "https://firebasestorage.googleapis.com/v0/b/shop-32719.appspot.com/o/images%2Fphongnu6.jpg?alt=media&token=faf5480b-5123-4331-b2d6-d723442ca838",
+      "price": "125.000"
+    },
+    {
+      "id": "1bb0z1smm",
+      "categoryId": "3",
+      "name": "Hoodie",
+      "image": "https://firebasestorage.googleapis.com/v0/b/shop-32719.appspot.com/o/images%2Fphongnu7.jpg?alt=media&token=03cdae07-6e45-4b5a-8cb7-3cac9740e0ac",
+      "price": "250.000"
+    },
+    {
+      "id": "ot9mlnk32",
+      "categoryId": "3",
+      "name": "Hoodie nam",
+      "image": "https://firebasestorage.googleapis.com/v0/b/shop-32719.appspot.com/o/images%2Fhoodie3.jpg?alt=media&token=e185fd30-e309-46d4-b905-7980efe099dc",
+      "price": "345.00"
+    },
+    {
+      "id": "t8yg8y8w5",
+      "categoryId": "3",
+      "name": "Hoodie nam",
+      "image": "https://firebasestorage.googleapis.com/v0/b/shop-32719.appspot.com/o/images%2Fhoodie2pg.jpg?alt=media&token=a49ac76b-ce65-4e48-95bc-4981220659d1",
+      "price": "325.000"
+    },
+    {
+      "id": "zvc6io54z",
+      "categoryId": "4",
+      "name": "Chân váy thắt nơ",
+      "image": "https://firebasestorage.googleapis.com/v0/b/shop-32719.appspot.com/o/images%2Fchanvay1.jpg?alt=media&token=0ae10830-08e6-49da-b5ae-5ade29e0672d",
+      "price": "190.000"
+    },
+    {
+      "id": "l2fclm4o6",
+      "categoryId": "4",
+      "name": "Chân váy basic",
+      "image": "https://firebasestorage.googleapis.com/v0/b/shop-32719.appspot.com/o/images%2Fchanvay.jpg?alt=media&token=1e4838fd-9aac-4626-98b6-7321efffe1ea",
+      "price": "350.000"
+    },
+    {
+      "id": "mqtyp0lkg",
+      "categoryId": "4",
+      "name": "Váy",
+      "image": "https://firebasestorage.googleapis.com/v0/b/shop-32719.appspot.com/o/images%2Fvay.jpg?alt=media&token=01f7e973-6b38-4964-9869-51ca8458ec2b",
+      "price": "370.000"
+    },
+    {
+      "id": "hzsarx790",
+      "categoryId": "4",
+      "name": "Quần rộng",
+      "image": "https://firebasestorage.googleapis.com/v0/b/shop-32719.appspot.com/o/images%2Fquan2.jpg?alt=media&token=323c8c89-245d-4cbf-8320-c6c44fb31f4a",
+      "price": "300.000"
+    },
+    {
+      "id": "992u28jqw",
+      "categoryId": "4",
+      "name": "Quần boy baby",
+      "image": "https://firebasestorage.googleapis.com/v0/b/shop-32719.appspot.com/o/images%2FQuan.jpg?alt=media&token=c6f6af1c-3c05-4c45-a708-fe6785fd65d4",
+      "price": "250.000"
+    },
+    {
+      "id": "qwxrza9vw",
+      "name": "",
+      "image": "https://firebasestorage.googleapis.com/v0/b/shop-32719.appspot.com/o/images%2Fbrand_02.png?alt=media&token=37d44c5d-1cfe-4670-a925-fd527f9d13c9",
+      "price": "20000",
+      "quantity": "30"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Áo Nam",
+      "image": "https://firebasestorage.googleapis.com/v0/b/shop-32719.appspot.com/o/images%2Faotrang.jpg?alt=media&token=fc2adb06-7dd0-4863-a71b-77beb8e64c9e"
+    },
+    {
+      "id": "2",
+      "name": "Áo nữ",
+      "image": "https://firebasestorage.googleapis.com/v0/b/shop-32719.appspot.com/o/images%2Fphongnu3.jpg?alt=media&token=6073a177-5e28-4289-85f4-cac429bf1030"
+    },
+    {
+      "id": "3",
+      "name": "Hoodie",
+      "image": "https://firebasestorage.googleapis.com/v0/b/shop-32719.appspot.com/o/images%2Fhoodie2pg.jpg?alt=media&token=a49ac76b-ce65-4e48-95bc-4981220659d1"
+    },
+    {
+      "id": "4",
+      "name": "Quần and váy",
+      "image": "https://firebasestorage.googleapis.com/v0/b/shop-32719.appspot.com/o/images%2FQuan.jpg?alt=media&token=c6f6af1c-3c05-4c45-a708-fe6785fd65d4"
+    }
+  ],
+  "news": [
+    {
+      "id": 1,
+      "title": " thành cô nàng phá cách cùng trang phục Jeans",
+      "image": "http://tashop.vn/templates/pictures/content/phoi-do-cung-trang-phuc-jean-1.gif",
+      "content": "Cùng Yame thử phá cách một lần khi kết hợp những item Jean thân quen nàng đang có  và ngắm nhìn bản thân mới lạ với những biến tấu này, nàng nhé! Jean luôn là một chất liệu dù nàng theo phong cách nào. Nhưng điểm mạnh cũng là điểm yếu, những trang phục... "
+    },
+    {
+      "id": 1,
+      "title": " Phối đồ với quần skinny jean cực chất",
+      "image": "http://tashop.vn/templates/pictures/news/1498824307_phoi-do-voi-skinny-jean-01_thumb_400x200.png",
+      "content": "Cùng Yame thử phá cách một lần khi kết hợp những item Jean thân quen nàng đang có  và ngắm nhìn bản thân mới lạ với những biến tấu này, nàng nhé! Jean luôn là một chất liệu dù nàng theo phong cách nào. Nhưng điểm mạnh cũng là điểm yếu, những trang phục... "
+    },
+    {
+      "id": 1,
+      "title": " thành cô nàng phá cách cùng trang phục Jeans",
+      "image": "http://tashop.vn/templates/pictures/news/1484044242_bi-quyet-giup-nang-tre-hon-tuoi-that-0_thumb_400x200.png",
+      "content": "Cùng Yame thử phá cách một lần khi kết hợp những item Jean thân quen nàng đang có  và ngắm nhìn bản thân mới lạ với những biến tấu này, nàng nhé! Jean luôn là một chất liệu dù nàng theo phong cách nào. Nhưng điểm mạnh cũng là điểm yếu, những trang phục... "
+    }
+  ],
+  "account": [
+    {
+      "id": 1,
+      "username": "linhtranthi",
+      "password": "123456"
+    },
+    {
+      "id": 2,
+      "username": "leq2010",
+      "image": "https://firebasestorage.googleapis.com/v0/b/shop-32719.appspot.com/o/users%2Faothun1.jpg?alt=media&token=22697e70-19a0-4e75-a806-fa7f65af9da8",
+      "password": "12345678",
+      "email": "lequyet840500@gmail.com",
+      "numberphone": "4522434232",
+      "role": 1
+    },
+    {
+      "id": 3,
+      "username": "leq2010",
+      "image": "https://firebasestorage.googleapis.com/v0/b/shop-32719.appspot.com/o/users%2Faothun1.jpg?alt=media&token=22697e70-19a0-4e75-a806-fa7f65af9da8",
+      "password": "12345678",
+      "email": "lequyet840500@gmail.com",
+      "numberphone": "4522434232",
+      "role": 1
+    },
+    {
+      "id": 4,
+      "username": "sungdai2m",
+      "image": "https://firebasestorage.googleapis.com/v0/b/shop-32719.appspot.com/o/users%2Fbanner_nu.jpg?alt=media&token=126594e2-b852-43fd-ab15-f43a26924cf2",
+      "password": "123456",
+      "email": "sung@gmail.com",
+      "numberphone": "4522434232",
+      "role": 1
+    },
+    {
+      "id": 5,
+      "username": "sungdai2m",
+      "image": "https://firebasestorage.googleapis.com/v0/b/shop-32719.appspot.com/o/users%2Fbanner_nu.jpg?alt=media&token=126594e2-b852-43fd-ab15-f43a26924cf2",
+      "password": "123456",
+      "email": "sung@gmail.com",
+      "numberphone": "4522434232",
+      "role": 1
+    },
+    {
+      "id": 6,
+      "username": "linhle",
+      "image": "https://firebasestorage.googleapis.com/v0/b/shop-32719.appspot.com/o/users%2Fchanvay.jpg?alt=media&token=a4c7ffa1-3796-42ed-81ff-d41480485f44",
+      "password": "12345678",
+      "email": "linhtran@gmail.com",
+      "numberphone": "057383924",
+      "role": 1
+    },
+    {
+      "id": 7,
+      "username": "linhle",
+      "image": "https://firebasestorage.googleapis.com/v0/b/shop-32719.appspot.com/o/users%2Fchanvay.jpg?alt=media&token=a4c7ffa1-3796-42ed-81ff-d41480485f44",
+      "password": "12345678",
+      "email": "linhtran@gmail.com",
+      "numberphone": "057383924",
+      "role": 1
+    },
+    {
+      "id": 8,
+      "username": "linh0910",
+      "image": "https://firebasestorage.googleapis.com/v0/b/shop-32719.appspot.com/o/users%2Faotrang.jpg?alt=media&token=9bddd568-0553-4ac4-bd7f-221336f3fd0d",
+      "password": "123456789",
+      "email": "linh09@gmail.com",
+      "numberphone": "0334395280",
+      "role": 1
+    },
+    {
+      "id": 9,
+      "username": "linh0910",
+      "image": "https://firebasestorage.googleapis.com/v0/b/shop-32719.appspot.com/o/users%2Faotrang.jpg?alt=media&token=9bddd568-0553-4ac4-bd7f-221336f3fd0d",
+      "password": "123456789",
+      "email": "linh09@gmail.com",
+      "numberphone": "0334395280",
+      "role": 1
+    }
+  ]
+}
