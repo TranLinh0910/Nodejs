@@ -1,14 +1,19 @@
 import express from 'express'
+import { update,list,create, productById, read, remove,photo} from '../controllers/product'
+ //import products from '../models/product'
 const router = express.Router();
 
-//chi tiết
-router.get('/product', (req, res) => {
-    res.json({
-        message: "Hello"
-    })
-});
+
 //them sp
-router.post('/product',(req,res)=>{
-//truy vấn db thêm sp vào
-});
+
+router.post('/product', create);
+router.get('/product',list);
+router.put('/product/:productId',update)
+router.get('/product/:productId', read);
+router.delete('/product/:productId',remove);
+router.get('/product/photo/:productId',photo);
+router.param('productId', productById);
+
+
+
 module.exports = router;
