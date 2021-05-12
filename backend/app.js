@@ -5,13 +5,22 @@ import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 import productRouter from './routes/product.js';
 import categoryRouter from './routes/category';
-
+import auth from './routes/auth';
+import user from './routes/user';
+import cors from 'cors'
+// import expressValidator from 'express-validator'
+import ExpressValidator from 'express-validator';
 
 const app = express();
 dotenv.config();
 app.use(bodyParser.json());
+app.use(cors())
+
 
 app.use(morgan('dev'));
+
+app.use(ExpressValidator())
+
 //Connectinon
 mongoose.connect(process.env.MONGGO_URI, {
     useNewUrlParser: false,
@@ -27,6 +36,8 @@ mongoose.connection.on('Error', err => {
 //Routes
 app.use('/api', productRouter);
 app.use('/api', categoryRouter);
+app.use('/api',auth);
+app.use('/api',user);
 
 
 const port = process.env.PORT || 8000

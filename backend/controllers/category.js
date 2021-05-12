@@ -8,7 +8,7 @@ export const create = (req, res) => {
                 error: "Khong them duoc danh muc"
             })
         }
-        res.json({ data });
+        res.json(data);
     })
 }
 export const list = (req, res) => {
@@ -18,7 +18,7 @@ export const list = (req, res) => {
                 error: "Danh muc khong ton tai"
             })
         }
-        res.json({ categories });
+        res.json(categories);
     })
 }
 export const categoryById = (req, res, next, id) => {
@@ -35,29 +35,36 @@ export const categoryById = (req, res, next, id) => {
 export const read = (req, res) => {
     return res.json(req.category);
 }
-export const update =(req,res)=>{
-    const category=req.category;
-    category.name=req.body.name;
-    category.save((err,data)=>{
-        if(err||!category){
+export const update = (req, res) => {
+    const category = req.category;
+    category.name = req.body.name;
+    category.save((err, data) => {
+        if (err || !category) {
             res.status(400).json({
-                error:"Danh muc nay khong ton tai"
+                error: "Danh muc nay khong ton tai"
             })
         }
-        res.json({data})
+        res.json({ data })
     })
 }
-export const remove =(req,res)=>{
-    let category=req.category;
-    category.remove((err,deleteCategory)=>{
-        if(err||!category){
+export const remove = (req, res) => {
+    let category = req.category;
+    category.remove((err, deleteCategory) => {
+        if (err || !category) {
             res.status(400).json({
-                error:"Danh muc nay khong ton tai"
+                error: "Danh muc nay khong ton tai"
             })
         }
-        res.json({deleteCategory,message:"Xoa danh muc thanh cong"})
+        res.json({ deleteCategory, message: "Xoa danh muc thanh cong" })
     })
 
 
 }
 
+export const photo = (req, res, next) => {
+    if (req.product.photo.data) {
+        res.set("Content-Type", req.product.photo.contentType);
+        return res.send(req.product.photo.data);
+    }
+    next();
+}

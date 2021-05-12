@@ -1,37 +1,36 @@
 import mongoose from 'mongoose';
-const {ObjectId}= mongoose.Schema;
+const { ObjectId } = mongoose.Schema;
 const products = mongoose.Schema({
     name: {
-type: String,
-    },
-    description: {
         type: String,
-        maxLength: 2000
     },
+    // description: {
+    //     type: String,
+    //     maxLength: 2000
+    // },
     price: {
         type: Number,
     },
-    category:{
-        type:ObjectId,
-        ref:"Category",
-        required:true
+    category: {
+        type: ObjectId,
+        ref: "Category",
+        required: true
 
     },
-    photo: {
-        data: Buffer,
-        contentType: String,
+    image: {
+        type: String,
     },
     quantity: {
         type: Number
     },
-    shipping: {
+    // shipping: {
 
-        type: Boolean
+    //     type: Boolean
 
-    },
-    sold: {
-        type: Number,
-        default: 0
-    }
+    // },
+    // sold: {
+    //     type: Number,
+    //     default: 0
+    // }
 }, { timeStamps: true });
 module.exports = mongoose.model("products", products)

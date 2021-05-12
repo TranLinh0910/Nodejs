@@ -11,8 +11,11 @@ router.get('/product',list);
 router.put('/product/:productId',update)
 router.get('/product/:productId', read);
 router.delete('/product/:productId',remove);
-router.get('/product/photo/:productId',photo);
+// router.get('/product/photo/:productId',photo);
 router.param('productId', productById);
+
+
+// app.get('/' (res,req)=>{})
 
 
 

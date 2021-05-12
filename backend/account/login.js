@@ -2,9 +2,9 @@ import ProductApi from "../../frontend/src/api/ProductApi";
 import { $ } from "../../frontend/src/utils";
 
 const Login = {
-   async render() {
+  async render() {
 
-         return ` <div class="container-fluid">
+    return ` <div class="container-fluid">
          <div id="err-login"></div>
         <form>
           <div class="row">
@@ -43,24 +43,24 @@ const Login = {
         </div>
       </div>
       `
-    },
-    async afterRender(){
-        $('#btn-login').addEventListener('click',async (e)=>{
-            e.preventDefault();
-            const username = $('#login-username').value
-            const password = $('#login-password').value
-            const {data : account} = await ProductApi.getAccount(username,password);
-            console.log(account);
-           if(account.length === 0){
-             $("err-login").innerHTML = "Thông tin tài khoản không chính xác!!!";
-           }else{
-             account.map(({username, password}) => {
-localStorage.setItem("username", username);
-localStorage.setItem("password", password);
-window.location.hash = "/";
-             })
-           }
+  },
+  async afterRender() {
+    $('#btn-login').addEventListener('click', async (e) => {
+      e.preventDefault();
+      const username = $('#login-username').value
+      const password = $('#login-password').value
+      const { data: account } = await ProductApi.getAccount(username, password);
+      console.log(account);
+      if (account.length === 0) {
+        $("err-login").innerHTML = "Thông tin tài khoản không chính xác!!!";
+      } else {
+        account.map(({ username, password }) => {
+          localStorage.setItem("username", username);
+          localStorage.setItem("password", password);
+          window.location.hash = "/";
         })
-    }
+      }
+    })
+  }
 }
 export default Login;
