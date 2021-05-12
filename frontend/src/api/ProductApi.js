@@ -1,11 +1,11 @@
 import { axiosClient } from './axiosClient';
-const ProductApi = {
+const productsApi = {
     getAll(){
-        const url = `/products`;
+        const url = `/product`;
         return axiosClient.get(url);
     },
     get(id){
-        const url = `/products/${id}`;
+        const url = `/product/${id}`;
         return axiosClient.get(url);
     },
     
@@ -13,21 +13,21 @@ const ProductApi = {
         const url = `/news`;
         return axiosClient.get(url);
     },
-    add(product){
-        const url = `/products`;
-        return axiosClient.post(url, product);
+    add(products){
+        const url = `/product`;
+        return axiosClient.post(url, products);
     },
     remove(id){
-        const url = `/products/${id}`;
+        const url = `/product/${id}`;
         return axiosClient.delete(url);
 
     },
     update(id,data){
-        const url = `/products/${id}`;
+        const url = `/product/${id}`;
         return axiosClient.put(url,data);
     },
     search(inp) {
-        const url = `/products?q=${inp}`;
+        const url = `/product?q=${inp}`;
         return axiosClient.get(url);
       },
     getAccount(username,password){
@@ -35,4 +35,4 @@ const ProductApi = {
         return axiosClient.get(url);
     }
 }
-export default ProductApi;
+export default productsApi;

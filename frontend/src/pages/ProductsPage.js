@@ -1,14 +1,14 @@
 //import data from'../data.js';
 import ProductApi from '../api/ProductApi.js';
 // import axios from 'axios';
-const ProductsPage= {
-   async render(){
-        try{
-            const {data : products}= await ProductApi.getAll();
-         
+const ProductsPage = {
+    async render() {
+        try {
+            const { data: products } = await ProductApi.getAll();
+
             // const response=await axios ('https://5e79b4b817314d00161333da.mockapi.io/products');
             // const products =await response.data;
-            const result=products.map(product=>{
+            const result = products.map(product => {
                 return ` 
        
                 <div class="col-4">
@@ -17,13 +17,13 @@ const ProductsPage= {
             <div class="card-body">
             <h5 class="card-title">${product.name}</h5>
             <p> ${product.price}</p>
-                <a href="/#/products/${product.id}" class="btn btn-primary">Xem thêm</a>
+                <a href="/#/products/${product._id}" class="btn btn-primary">Xem thêm</a>
          </div>
         </div>
         </div>`;
-        }).join("");
+            }).join("");
 
-        return `
+            return `
         <div class="container">
         <section>
         <div class="d-flex flex-row bd-highlight mb-3">
@@ -37,14 +37,14 @@ const ProductsPage= {
         <div class="row">
         ${result}
         </div></div>`;
-            
-        } catch(error){
+
+        } catch (error) {
             console.log(error);
         }
-       // const {products}=data;
-        
-            
-     
+        // const {products}=data;
+
+
+
     },
 };
 export default ProductsPage;

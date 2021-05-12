@@ -5,17 +5,21 @@ const categoryApi = {
         return axiosClient.get(url);
     },
     get(id){
-        const url = `/categories/${id}`;
+        const url = `/category/${id}`;
         return axiosClient.get(url);
     },
-    add(){
-
+    add(category){
+        const url = `/category`;
+        return axiosClient.post(url, category);
     },
     remove(id){
+        const url = `/category/${id}`;
+        return axiosClient.delete(url);
 
     },
-    updeta(id){
-
+    update(id,data){
+        const url = `/category/${id}`;
+        return axiosClient.put(url,data);
     },
 }
 export default categoryApi;

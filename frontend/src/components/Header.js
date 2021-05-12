@@ -1,10 +1,10 @@
-import categoryApi from '../api/categoryApi';
+// import categoryApi from '../api/categoryApi';
 import ProductApi from '../api/ProductApi';
 import {$} from '../utils';
 
 const Header ={
  async render(){
-    const {data: categories }= await categoryApi.getAll();
+    // const {data: categories }= await categoryApi.getAll();
     //console.log(data);
     return/*html*/`
     

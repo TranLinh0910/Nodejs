@@ -1,11 +1,11 @@
 import categoryApi from "../api/categoryApi";
 import ProductApi from "../api/ProductApi"
 import Header from "../components/Header";
-const HomePage= {
-    
-   async render(){
-        const {data: products} = await ProductApi.getAll();
-        const {data: categories} = await categoryApi.getAll();
+const HomePage = {
+
+    async render() {
+        const { data: products } = await ProductApi.getAll();
+        const { data: categories } = await categoryApi.getAll();
         return /*html*/` <!-- Modal -->
         <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog"
             aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -38,7 +38,7 @@ const HomePage= {
                     <div class="container">
                         <div class="row p-5">
                             <div class="mx-auto col-md-12 col-lg-12 order-lg-last">
-                                <img class="img-fluid" src="https://atpfashion.com/wp-content/uploads/2020/02/Men_Casual.jpg"  alt="">
+                                <img class="img-fluid" src="https://img3.thuthuatphanmem.vn/uploads/2019/10/14/banner-thoi-trang-hien-dai-dep-nhat_113857069.jpg"  alt="">
                             </div>
 
                         </div>
@@ -76,21 +76,20 @@ const HomePage= {
     <h1 class="h1 mt-4 mb-4 text-center">Danh mục sản phẩm</h1>
 <div class="row">
 ${categories.map(category => {
-    return /*html*/`<div class="col-3">
-    <a href="/#/category/${category.id}" style="text-decoration: none;">
+            return /*html*/`<div class="col-3 mt-4">
+    <a href="/#/category/${category._id}" style="text-decoration: none;">
     <div class="card">
-  <img class="card-img" style="object-fit: cover" height="270px" src="${category.image}">
+  <img class="card-img" style="object-fit: cover" height="270px" src="${category.photo}">
   <div class="card-body">
     <p class="card-text text-center">${category.name}</p>
   </div>
 </div>
 </a>
     </div>`
-}).join("")}
+        }).join("")}
 </div></div>
-
         <!--End Danh mục -->
-       
+      
     
     
         <!-- Start Featured Product -->
@@ -102,7 +101,8 @@ ${categories.map(category => {
                     </div>
                 </div>
                 <div class="row">
-                ${products.filter(item => item.categoryId == 1).map(product => {return ` <div class="col-12 col-md-3 mb-4 ">
+                ${products.filter(item => item.category == "607d32932184c449b4762a0f").map(product => {
+            return ` <div class="col-12 col-md-3 mb-4 ">
                 <div class="card h-100 ">
                     <a href="shop-single.html">
                         <img src="${product.image}" style="object-fit:cover;" class="card-img" height="300px" alt="...">
@@ -110,12 +110,12 @@ ${categories.map(category => {
                     <div class="card-body">
                     <h3 class = "text-center text-info">${product.name}</h3>
                       <p class="text-right">  ${product.price}đ <del> </del></p>
-                        <a class="btn btn-success text-center" href="/#/products/${product.id}">Chi Tiết</a>
+                        <a class="btn btn-success text-center" href="/#/products/${product._id}">Chi Tiết</a>
                      </div>
                 </div>
             </div>`
-                
-                }).slice(0,4).join("")}
+
+        }).slice(0, 4).join("")}
                    
                    
                 </div>
@@ -130,7 +130,8 @@ ${categories.map(category => {
                 </div>
             </div>
             <div class="row">
-            ${products.filter(item => item.categoryId == 2).map(product => {return ` <div class="col-12 col-md-3 mb-4 ">
+            ${products.filter(item => item.category == "607d315b6d887517e41e6c04").map(product => {
+            return ` <div class="col-12 col-md-3 mb-4 ">
             <div class="card h-100 ">
                 <a href="shop-single.html">
                     <img src="${product.image}" style="object-fit:cover;" class="card-img" height="300px" alt="...">
@@ -138,12 +139,12 @@ ${categories.map(category => {
                 <div class="card-body">
                 <h3 class = "text-center text-info">${product.name}</h3>
                   <p class="text-right">  ${product.price}đ <del> </del></p>
-                    <a class="btn btn-success text-center" href="/#/products/${product.id}">Chi Tiết</a>
+                    <a class="btn btn-success text-center" href="/#/products/${product._id}">Chi Tiết</a>
                  </div>
             </div>
         </div>`
-            
-            }).slice(0,4).join("")}
+
+        }).slice(0, 4).join("")}
                
                
             </div>
@@ -159,7 +160,8 @@ ${categories.map(category => {
             </div>
         </div>
         <div class="row">
-        ${products.filter(item => item.categoryId == 3).map(product => {return ` <div class="col-12 col-md-3 mb-4 ">
+        ${products.filter(item => item.category == "607d369d2184c449b4762a12").map(product => {
+            return ` <div class="col-12 col-md-3 mb-4 ">
         <div class="card h-100 ">
             <a href="shop-single.html">
                 <img src="${product.image}" style="object-fit:cover;" class="card-img" height="300px" alt="...">
@@ -167,12 +169,12 @@ ${categories.map(category => {
             <div class="card-body">
             <h3 class = "text-center text-info">${product.name}</h3>
               <p class="text-right">  ${product.price}đ <del> </del></p>
-                <a class="btn btn-success text-center" href="/#/products/${product.id}">Chi Tiết</a>
+                <a class="btn btn-success text-center" href="/#/products/${product._id}">Chi Tiết</a>
              </div>
         </div>
     </div>`
-        
-        }).slice(0,4).join("")}
+
+        }).slice(0, 4).join("")}
            
            
         </div>
@@ -188,7 +190,8 @@ ${categories.map(category => {
         </div>
     </div>
     <div class="row">
-    ${products.filter(item => item.categoryId == 4).map(product => {return ` <div class="col-12 col-md-3 mb-4 ">
+    ${products.filter(item => item.category == "607d36aa2184c449b4762a13").map(product => {
+            return ` <div class="col-12 col-md-3 mb-4 ">
     <div class="card h-100 ">
         <a href="shop-single.html">
             <img src="${product.image}" style="object-fit:cover;" class="card-img" height="300px" alt="...">
@@ -196,12 +199,12 @@ ${categories.map(category => {
         <div class="card-body">
         <h3 class = "text-center text-info">${product.name}</h3>
           <p class="text-right">  ${product.price}đ <del> </del></p>
-            <a class="btn btn-success text-center" href="/#/products/${product.id}">Chi Tiết</a>
+            <a class="btn btn-success text-center" href="/#/products/${product._id}">Chi Tiết</a>
          </div>
     </div>
 </div>`
-    
-    }).slice(0,4).join("")}
+
+        }).slice(0, 4).join("")}
        
        
     </div>
@@ -211,7 +214,7 @@ ${categories.map(category => {
        
         <!-- End Featured Product -->`
     },
-   async afterRender(){
+    async afterRender() {
         return `${await Header.afterRender()}`
     }
 }

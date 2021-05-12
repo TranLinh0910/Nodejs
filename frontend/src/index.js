@@ -12,7 +12,9 @@ import About from "./pages/About.js";
 import News from "./pages/News.js";
 import Login from "../../backend/account/login.js";
 import RegistrationPage from "../../backend/account/RegistrationPage.js";
-
+import AdminCategoryPage from "./pages/AdminCategoryPage.js";
+import categoryAddPage from "./pages/CategoryAddPage.js";
+import CategoryEditpage from "./pages/CategoryEditpage.js";
 const routes={
     '/': HomePage,
     '/products':ProductsPage,
@@ -20,7 +22,10 @@ const routes={
     '/category/:id':Category,
     '/addproduct': ProductAddPage,
     '/listproduct':AdminProductPage,
+    '/listcategory': AdminCategoryPage,
+    '/addcategory': categoryAddPage,
     '/editproduct/:id':ProductEditPage,
+    '/editcategory/:id':CategoryEditpage,
     '/about':About,
     '/login':Login,
     '/new':News,

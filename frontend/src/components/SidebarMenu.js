@@ -15,6 +15,12 @@ const SideBarMenu={
               Products
             </a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/#/listcategory">
+              <span data-feather="shopping-cart"></span>
+              Quản lý danh mục
+            </a>
+          </li>
         </ul>   
         
         `
