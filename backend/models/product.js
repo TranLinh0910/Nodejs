@@ -11,7 +11,7 @@ const products = mongoose.Schema({
     price: {
         type: Number,
     },
-    category: {
+    cateId: {
         type: ObjectId,
         ref: "Category",
         required: true
@@ -23,11 +23,11 @@ const products = mongoose.Schema({
     quantity: {
         type: Number
     },
-    // shipping: {
+    shipping: {
 
-    //     type: Boolean
+        type: Boolean
 
-    // },
+    },
     // sold: {
     //     type: Number,
     //     default: 0

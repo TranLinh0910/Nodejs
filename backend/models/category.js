@@ -5,7 +5,7 @@ const categorySchema = mongoose.Schema({
         required: true,
         maxLength: 32
     },
-    photo: {
+    image: {
         type: String
     }
 }, { timestamps: true });

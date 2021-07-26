@@ -64,7 +64,7 @@ exports.signout=(req,res)=>{
         message:'Aignout Success'
     })
 };
-exports.requireSignin=expressJwt({
+export const requireSignin=expressJwt({
     //thuộc tính của thư viện
     secret:process.env.JWT_SECRET,
     //phương thức mã hóa
@@ -80,7 +80,7 @@ export const isAuth=(req,res,next)=>{
     }
     next();
 }
-exports.isAdmin=(req,res,next)=>{
+ export const isAdmin=(req,res,next)=>{
     if(req.profile.role==0){
         return res.status(403).json({
             error:"Admin resource! Access Denined"

@@ -14,8 +14,7 @@ import ExpressValidator from 'express-validator';
 const app = express();
 dotenv.config();
 app.use(bodyParser.json());
-app.use(cors())
-
+app.use(cors({ credentials: 'same-origin' }));
 
 app.use(morgan('dev'));
 
